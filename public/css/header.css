@@ -1,0 +1,33 @@
+header{
+width:100%;
+}
+header img{
+    border-radius:50%;
+    border:solid 1px #92908b;
+    
+    margin:30px auto;
+    display:block; 
+}
+header a.btn-burger{
+    width:50px;
+    padding:5px;
+    background-color: #63645d;
+    display:inline;
+    color:#ebebeb;
+    font-size: 32px;
+   margin: 0 auto 30px; 
+   text-align: center;
+
+}
+header li{
+    background-color: #63645d;
+    margin-bottom: 2px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+header li a{
+    color: #ffffff;
+    text-transform:uppercase;
+
+}

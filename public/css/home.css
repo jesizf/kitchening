@@ -1,3 +1,8 @@
 body{
     background-color: red;
 }
+.home{
+    background-image:url('/images/fondo.png')
+}
+.home .banner{
+   display: none}
