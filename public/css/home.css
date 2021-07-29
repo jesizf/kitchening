@@ -1,6 +1,4 @@
-body{
-    background-color: red;
-}
+
 .home{
     background-image:url('/images/fondo.png');
     padding:0,10px;
@@ -9,19 +7,19 @@ body{
    display: none}
    
    /*productos*/
-   .home .producto{
+.home .producto{
        width:100%;
        margin-top:20px;
        position:relative;
       
    } 
-   .home .img-box{
+.home .img-box{
     position:relative;
    }
-   .home .img-foto{
+.home .img-foto{
            width:100%;
    }
-   .home .btn-zoom{
+.home .btn-zoom{
        position:absolute;
        top:calc(50% -10px);
 
@@ -35,19 +33,19 @@ body{
        text-align: center;
       
    }
-   .home .img-etiqueta{
+.home .img-etiqueta{
        position:absolute; /*superpusimos*/
        top:0;
        right:10px;
    }
-   .home .producto h4{
+.home .producto h4{
        margin:20px 0;
 
    }
-   li{
+li{
        list-style:none;
    }
-   .home.producto p{
+.home.producto p{
        color:var(--colorgris);
    }
    .home .btn-more{
