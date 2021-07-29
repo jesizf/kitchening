@@ -31,3 +31,6 @@ header li a{
     text-transform:uppercase;
 
 }
+:root{
+    --colorgris: #63645d;
+}

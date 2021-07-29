@@ -2,7 +2,77 @@ body{
     background-color: red;
 }
 .home{
-    background-image:url('/images/fondo.png')
+    background-image:url('/images/fondo.png');
+    padding:0,10px;
 }
 .home .banner{
    display: none}
+   
+   /*productos*/
+   .home .producto{
+       width:100%;
+       margin-top:20px;
+       position:relative;
+      
+   } 
+   .home .img-box{
+    position:relative;
+   }
+   .home .img-foto{
+           width:100%;
+   }
+   .home .btn-zoom{
+       position:absolute;
+       top:calc(50% -10px);
+
+       text-transform: uppercase;
+       color:#fff;
+       left:0;
+       background-color: rgba(0,0,0,0.5);
+       display:block;
+       width:100%;
+       padding:10px 0;
+       text-align: center;
+      
+   }
+   .home .img-etiqueta{
+       position:absolute; /*superpusimos*/
+       top:0;
+       right:10px;
+   }
+   .home .producto h4{
+       margin:20px 0;
+
+   }
+   li{
+       list-style:none;
+   }
+   .home.producto p{
+       color:var(--colorgris);
+   }
+   .home .btn-more{
+       padding:10px;
+       color:#fff;
+       background-color: var(--colorgris);
+       display:inline-block;
+       margin:20px 0;
+   }
+   /*tablet*/
+  @media(min-width:768px){
+      .home .banner{display:block;}
+      .home .banner img{
+          width:100%;
+
+      }
+      .home .producto{
+          width:48%;
+          display: inline-block;
+          margin-right:3%;
+
+      }.home .producto.producto:nth-child(even){
+          margin-right :3%;
+      }
+      .home .producto.producto:nth-child(2n){
+          margin-right: 0;
+      }
+  }
