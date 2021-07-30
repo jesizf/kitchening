@@ -1,9 +1,10 @@
 
 .home{
     background-image:url('/images/fondo.png');
-    padding:0,10px;
+    padding:0 10px;
 }
 .home .banner{
+    width:100%;
    display: none}
    
    /*productos*/
@@ -19,15 +20,17 @@
 .home .img-foto{
            width:100%;
    }
+
 .home .btn-zoom{
        position:absolute;
        top:calc(50% -10px);
 
        text-transform: uppercase;
        color:#fff;
+       top:120px;
        left:0;
        background-color: rgba(0,0,0,0.5);
-       display:block;
+       display:block; /*si le doy un ancho*/
        width:100%;
        padding:10px 0;
        text-align: center;
@@ -57,20 +60,45 @@ li{
    }
    /*tablet*/
   @media(min-width:768px){
-      .home .banner{display:block;}
+      .home .banner{
+          display:block;
+        }
       .home .banner img{
           width:100%;
 
       }
-      .home .producto{
-          width:48%;
-          display: inline-block;
-          margin-right:3%;
+        .home .producto{
+            width:48%;
+         display: inline-block;
+         margin-right:3%;
 
-      }.home .producto.producto:nth-child(even){
-          margin-right :3%;
-      }
-      .home .producto.producto:nth-child(2n){
-          margin-right: 0;
-      }
-  }
+    }
+    .home .producto.producto:nth-child(even){
+margin-right :3%;
+}
+.home .producto.producto:nth-child(2n){
+margin-right: 0;
+}}
+  
+/*desktop*/
+@media (min-width:1024px){
+    .home{
+        max-width:1280px;
+        margin:0 auto;
+    }
+    .home .productos{
+        overflow: hidden;
+    }
+    .home .producto{
+        float:left;
+        width:32%;
+        margin-right:2%;
+    }.home .producto.producto:nth-child(2n){
+        margin-right: 2%;
+        }
+    .home .producto.producto:nth-child(3n){
+        margin-right: 0;
+    }
+
+
+}    

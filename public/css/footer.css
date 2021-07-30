@@ -6,3 +6,42 @@ footer li{
 
 
 }
+footer li{
+    background-color: #63645d;
+    margin-bottom: 2px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+footer li a{
+    color: #ffffff;
+    text-transform:uppercase;
+
+}
+:root{
+    --colorgris: #63645d;}
+@media(min-width:1024px){
+    footer{
+        padding:40px;
+        background-color: #b71e15
+        ;
+        text-align: center;
+        border-radius:20px 20px 0 0;
+    }
+    
+    footer li{
+        background:none;
+        display:inline-block;
+        padding:10px;
+        border-right:1px solid #ffff;
+        padding:5px 10px;
+    }
+    footer li last-child{
+        border-right: none;
+    }
+footer li a{
+    color: #ffffff;
+    text-transform:capitalize; /*primera letra en mayu*/
+
+}
+}

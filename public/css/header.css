@@ -17,6 +17,7 @@ header a.btn-burger{
     font-size: 32px;
    margin: 0 auto 30px; 
    text-align: center;
+   border-radius: 5px;
 
 }
 header li{
@@ -29,8 +30,32 @@ header li{
 header li a{
     color: #ffffff;
     text-transform:uppercase;
+   
 
 }
-:root{
-    --colorgris: #63645d;
+
+@media(min-width:768px){
+    header a.btn-burger{
+       
+        display:none;
+
+    }
+    header li{
+        float: left; /* los botones
+        del home se ponen uno al lado del otro */
+        width:15%;
+        margin-right:2%;
+        margin-bottom:30px;
+    }
+    header li:last-child{ /*que el ultimo tenga estas dimen
+        siones*/
+        margin-right:0;
+    }
+}   header li a{
+    font-size: .9rem ;
 }
+@media (min-width:1024px){
+
+    header li a{
+        font-size: 1rem ;
+}}

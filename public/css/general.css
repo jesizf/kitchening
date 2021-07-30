@@ -13,3 +13,6 @@ a{
 li{
     list-style: none;
 }
+:root{
+  --colorgris:#63645d;
+}
